@@ -1,4 +1,4 @@
-baseURL: 'https://copilotmoon.github.io'
+baseURL: https://copilotmoon.github.io
 title: ch's Blog
 paginate: 5
 theme: PaperMod
