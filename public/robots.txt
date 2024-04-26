@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://copilotmoon.github.io/Moonlight.github.io/sitemap.xml
