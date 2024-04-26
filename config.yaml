@@ -10,6 +10,9 @@ buildExpired: false
 
 minify:
     disableXML: false
+    disableCSS: false
+    disableJSON: false
+    disableSVG: false
     minifyOutput: true
 
 # 配置搜索引擎的参数
