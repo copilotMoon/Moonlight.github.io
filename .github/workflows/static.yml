@@ -53,16 +53,12 @@ jobs:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
-        run: |
-          hugo \
-            --theme=PaperMod \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
-      - name: Upload artifact
+        run: hugo     
+      - name: Deploy web artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          PUBLISH_DIR: ./public
+          PUBLISH_BRANCH: master
 
   # Deployment job
   deploy:
