@@ -57,7 +57,7 @@ jobs:
       - name: Deploy web artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          PUBLISH_DIR: ./public
+          path: ./public
 
   # Deployment job
   deploy:
