@@ -1,0 +1,103 @@
+baseURL: https://copilotmoon.github.io
+title: ch's Blog
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+defaultContentLanguage: en # 默认语言
+defaultContentLanguageInSubdir: true # 默认语言是否放在子目录中
+
+languages:
+  en:
+    languageName: English
+    languageCode: en
+    contentDir: content/English
+  menu:
+    main:
+        - identifier: about
+          name: About 
+          url: /about/
+          weight: 1
+        - identifier: blog
+          name: Blog
+          url: /blog/
+          weight: 2
+        - identifier: projects
+          name: Projects
+          url: /projects/
+          weight: 3
+
+  # 配置搜索引擎的参数
+  params:
+    # env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    # profile-mode 个人简介模式
+    profileMode:
+        enabled: true # needs to be explicitly set
+        title: '此去经年，应是良辰好景虚设'
+        subtitle: 'This is the website of **CHASdk**. A Blog recods life and work.'
+        imageUrl: '/images/cat.jpeg'
+        imageWidth: 150
+        imageHeight: 130
+        imageTitle: my image
+        buttons:
+            - name: Posts
+              url: posts
+
+    homeInfoParams:
+        enabled: false # needs to be explicitly set
+        Title: "Welcome! \U0001F44B"
+        Content: "This is the website of **Chanin Nantasenamat, Ph.D.** and I create educational content on data science and bioinformatics.Some of you may know me as the **Data Professor**."
+
+    # 联系方式地址
+    socialIcons:
+        - name: x
+          url: 'https://x.com/'
+        - name: github
+          url: 'https://github.com/Jundong-chan'
+
+    analytics:
+        google:
+            SiteVerificationTag: 'XYZabc'
+        bing:
+            SiteVerificationTag: 'XYZabc'
+        yandex:
+            SiteVerificationTag: 'XYZabc'
+
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
+    editPost:
+        URL: 'https://github.com/<path_to_repo>/content'
+        Text: 'Suggest Changes' # edit text
+        appendFilePath: true # to append file path to Edit link
+
+    # for search
+    # https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+        keys: ['title', 'permalink', 'summary', 'content']
+
+# 导航栏的菜单，相关内容在 content 目录下定义
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# pygmentsUseClasses: true
+# markup:
+#     highlight:
+#         noClasses: false
+        # anchorLineNos: true
+        # codeFences: true
+        # guessSyntax: true
+        # lineNos: true
+        # style: monokai

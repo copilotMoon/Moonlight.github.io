@@ -3,21 +3,21 @@ title: ch's Blog
 paginate: 5
 theme: PaperMod
 
+enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+# mainsections: ["posts", "papermod"]
 
 minify:
     disableXML: false
-    disableCSS: false
-    disableJSON: false
-    disableSVG: false
     minifyOutput: true
 
 # 配置搜索引擎的参数
 params:
-    env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title: CHASdk'Blog
     description: 'This is the website of CHASdk. A Blog recods life and work.'
     keywords: [Blog, ComputerSicence, Programming, Life, Work,]
@@ -56,35 +56,7 @@ params:
     label:
         text: 'MoonLight'
         icon: '/images/myimage.jpeg'
-        iconHeight: 35
-
-    # profile-mode 个人简介模式
-    profileMode:
-        enabled: true # needs to be explicitly set
-        title: '此去经年，应是良辰好景虚设'
-        subtitle: 'This is the website of **CHASdk**. A Blog recods life and work.'
-        imageUrl: '/images/cat.jpeg'
-        imageWidth: 150
-        imageHeight: 130
-        imageTitle: my image
-        buttons:
-            - name: Posts
-              url: posts
-            - name: Tags
-              url: tags
-
-    # home-info mode
-    homeInfoParams:
-        enabled: false
-        Title: "Hi there \U0001F44B"
-        Content: Welcome to my blog
-
-    # 联系方式地址
-    socialIcons:
-        - name: x
-          url: 'https://x.com/'
-        - name: github
-          url: 'https://github.com/Jundong-chan'
+        iconHeight: 35    
 
     analytics:
         google:
