@@ -1,3 +1,7 @@
 # blog
 
-我的博客管理项目
+## 新建博客
+
+```
+hugo new post/my-first-post.md
+```
