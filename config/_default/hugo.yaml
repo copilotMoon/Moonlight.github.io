@@ -22,14 +22,15 @@ languages:
     languageName: '中文🇨🇳'
     contentDir: content/Chinese
     params:
+      defaultTheme: auto
       profileMode:
         enabled: true # needs to be explicitly set
-        title: '此去经年，应是良辰好景虚设'
-        subtitle: '欢迎来到 ch 的博客'
+        title: ''
+        subtitle: '为路途留灯影，为旅途留剪影'
         imageUrl: '/images/dog.jpeg'
         imageWidth: 130
         imageHeight: 130
-        imageTitle: my image
+        imageTitle: image
         buttons:
           - name: Posts
             url: posts
@@ -50,7 +51,7 @@ languages:
         hiddenInList: true # hide on list pages and home
         hiddenInSingle: true # hide on single page
       editPost:
-        URL: 'https://github.com/<path_to_repo>/content'
+        URL: 'https://github.com/copilotMoon/copilotMoon.github.io/content'
         Text: 'Suggest Changes' # edit text
         appendFilePath: true # to append file path to Edit link
       # for search
@@ -73,7 +74,7 @@ languages:
           weight: 1
         - identifier: blog
           name: 博客
-          url: /blog/
+          url: /posts/
           weight: 2
         - identifier: projects
           name: 项目
