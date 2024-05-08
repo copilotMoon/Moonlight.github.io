@@ -32,7 +32,7 @@ languages:
         imageTitle: my image
         buttons:
           - name: Posts
-            url: post
+            url: posts
       socialIcons:
         - name: x
           url: 'https://x.com/'
